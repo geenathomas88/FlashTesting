@@ -34,8 +34,8 @@ public class SalesforceLogin {
 	
 	@Test
 	public void testLogin() throws InterruptedException{
-		driver.findElement(By.id("username")).sendKeys("itstough@gmail.com");
-		driver.findElement(By.id("password")).sendKeys("andrea@2k13");
+		driver.findElement(By.id("username")).sendKeys("");
+		driver.findElement(By.id("password")).sendKeys("");
 		driver.findElement(By.id("Login")).click();	
 		
 		WebDriverWait wait = new WebDriverWait(driver, 20);
@@ -73,16 +73,16 @@ public class SalesforceLogin {
 		Select dropdownSalutation = new Select(selectSalutation);
 		dropdownSalutation.selectByValue("Mr.");
 		
-		driver.findElement(By.cssSelector("input[id^='92']")).sendKeys("Geena");
-		driver.findElement(By.cssSelector("input[id^='101']")).sendKeys("Thomas");
-		driver.findElement(By.cssSelector("input[id^='110']")).sendKeys("Bibin");
+		driver.findElement(By.cssSelector("input[id^='92']")).sendKeys("a");
+		driver.findElement(By.cssSelector("input[id^='101']")).sendKeys("Thom");
+		driver.findElement(By.cssSelector("input[id^='110']")).sendKeys("Bi");
 		driver.findElement(By.cssSelector("input[id^='119']")).sendKeys("XX");
 		driver.findElement(By.cssSelector("input[id^='159']")).sendKeys("Title");
 		driver.findElement(By.cssSelector("input[id^='174']")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.cssSelector("input[id^='174']")).sendKeys("ABC Company");
 		Thread.sleep(5000);
-		driver.findElement(By.cssSelector("input[id^='193']")).sendKeys("geenathms@gmail.com");
+		driver.findElement(By.cssSelector("input[id^='193']")).sendKeys("");
 		
 		
 		WebElement selectLeadSource = driver.findElement(By.cssSelector("select[id^='278']"));
